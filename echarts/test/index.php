@@ -7,7 +7,7 @@ require("../../database/db_con.php");
 
 <head>
   <meta charset="utf-8" />
-  <title>ECharts Apache</title>  
+  <title>ECharts</title>  
   <link rel="stylesheet" href="../../css/styles.css" />
   <!-- Include the ECharts file you just downloaded -->
   <script src="../../lib/simpleRequire.js"></script>
