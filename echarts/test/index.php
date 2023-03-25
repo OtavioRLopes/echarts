@@ -1,5 +1,6 @@
 <?php
-require("../../database/db_con.php");
+include_once("../../database/process.php");
+include_once("../../database/process2.php");
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +8,7 @@ require("../../database/db_con.php");
 
 <head>
   <meta charset="utf-8" />
-  <title>ECharts</title>  
+  <title>ECharts</title>
   <link rel="stylesheet" href="../../css/styles.css" />
   <!-- Include the ECharts file you just downloaded -->
   <script src="../../lib/simpleRequire.js"></script>
@@ -17,24 +18,23 @@ require("../../database/db_con.php");
 
 <body>
   <div class="container">
-    <div class="row">       
-        <!-- Prepare a DOM with a defined width and height for ECharts -->              
-        <div id="chart1" class="chart"></div>
-          <?php
-            require("charts/chart1.php");
-          ?>                   
-        <!-- Prepare a DOM with a defined width and height for ECharts -->              
-        <div id="chart2" class="chart"></div>
-          <?php
-           require("charts/chart2.php");
-          ?>
-        <div id="chart3" style="width:800px; height:500px;"></div>
-          <?php
-           require("charts/chart3.php");
-          ?>             
+    <div class="row">
+      <!-- Prepare a DOM with a defined width and height for ECharts -->
+      <div id="chart1" class="chart"></div>
+      <?php
+      include_once("charts/chart1.php");
+      ?>
+      <div id="chart2" class="chart"></div>
+      <?php
+      include_once("charts/chart2.php");
+      ?>
+      <div id="chart3" class="chart"></div>
+      <?php
+      include_once("charts/chart3.php");
+      ?>
     </div>
   </div>
-  
+
 </body>
 
 </html>

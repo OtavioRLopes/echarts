@@ -1,7 +1,7 @@
 <?php
 
     $host = 'localhost';
-    $dbname = 'charts';
+    $dbname = 'brazil_pop';
     $user = "root";
     $pass = "";
 
